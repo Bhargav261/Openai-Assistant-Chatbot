@@ -18,7 +18,7 @@ if (import.meta.env.VITE_LIVE === 'true') {
 }
 
 
-export const socket = io(url, { autoConnect: false })
+export const socket = io(url, { autoConnect: false, transports: ["websocket"] })
 
 socket.on('connect', () => {
 
