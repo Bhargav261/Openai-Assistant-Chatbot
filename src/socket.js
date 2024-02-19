@@ -19,7 +19,7 @@ if (import.meta.env.VITE_LIVE === 'true') {
 
 console.log("url: - ", url);
 
-export const socket = io('https://fe71-103-206-138-197.ngrok-free.app', { autoConnect: false, transports: ["websocket"] })
+export const socket = io(url, { autoConnect: false, transports: ["websocket"] })
 
 console.log("socket: - ", socket);
 
